@@ -6,6 +6,7 @@
     <title>Learn Profit2</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <!-- Menu superior do site a Esquerda(Logo que ao clicar volta para home indiferente da pagina), 
@@ -14,20 +15,42 @@
     <header class="top">
         <nav class="logo"><a href="index.php"><img src="assets/" alt="Logo Learn Profit"></a></nav>
         <nav class="options">
-            <div class="aulas">Aulas</div>
-            <div class="suporte">Suporte</div>
+            <div class="op">
+                <div class="aulas">Aulas</div>
+                <div class="suporte">Suporte</div>
+            </div>
         </nav>
         <nav class="perfil">
-            <a href=""><img src="" alt="Perfil do usuário"></a>
+            <div class="cadastro"><a href="">Cadastrar</a></div>
+            <div class="login"><a href="">Login</a></div>
         </nav>
     </header>
+    
     <!-- Corpo do site, onde ficará todas as informações relevantes presentes nos protótipos -->
     <section class="mid">
         
-    </section>
-    <!-- Todas as informações dos Devs presentes aqui(forma de crédito por ajudar a desenvolver o site) -->
-    <footer class="bot">
+        <!-- Carrosel interativo com mensagens motivacionais relacionadas a programação(se possivel motivação sobre o tema) -->
+        <div class="carrosel">
 
+        </div>
+    
+        <!-- Sobre nós e explicativa do motivo do projeto e nosso objetivo com o usuário -->
+        <div class="sobre">
+
+        </div>
+    </section>
+    
+    <!-- Todas as informações dos Devs presentes aqui(forma de crédito por ajudar a desenvolver o site) MUDAR COM URGENCIA -->
+    <footer class="bot">
+        <section class="footerL">Learn Profit</section>
+        <section class="footerR">
+            <div class="bottop">GitHub<i class='bx bxl-github'></i></div>
+            <div class="botmid">
+                <a href="https://github.com/KiraZiki">Daniel Jacometo</a>
+                <a href="https://github.com/samcioli">Samira Ocioli</a>
+                <a href="https://github.com/Camarginho">Gabriel Camargo</a>
+            </div>
+        </section>
     </footer>
 
 
