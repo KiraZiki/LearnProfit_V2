@@ -123,12 +123,18 @@ body{
 
 .mid{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
-    margin-top: 20vh;
+    margin-top: 30vh;
     background-color: blue;
 }
 
+.sobre{
+    display: flex;
+}
 
 /*MUDAR O FOOTER COM URGENCIA*/
 footer{
@@ -138,6 +144,7 @@ footer{
     align-items: center;
     width: 100%;
     height: 35vh;
+    margin-bottom: -1%;
     background-color: var(--cor2);
     color: var(--cor3);
 }
@@ -156,7 +163,7 @@ footer{
     justify-content: start;
     align-items: end;
     width: 50vw;
-    height: 100%;
+    height: 99%;
     font-size: 1.5em;
 }
 .bottop{

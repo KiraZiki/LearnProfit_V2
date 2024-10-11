@@ -36,7 +36,39 @@
     
         <!-- Sobre nós e explicativa do motivo do projeto e nosso objetivo com o usuário -->
         <div class="sobre">
-
+            <h1>Nosso objetivo</h1>
+            <div class="objetivo">
+                <div class="leftimg"></div>
+                <div class="righttext">
+                <p>Nosso objetivo com você, é elevar o nível de 
+                aprendizado a um horizonte jamais visto!</p>
+                <p>Para isso desenvolvemos métodos para um aprendizado mais fluído e gratificante, 
+                visando o seu nível de conhecimento em programação.</p>
+                <p>O site conta com 3 diferentes níveis de conhecimento para qual você se sinta 
+                mais incluido no ensino para ter uma linha de aprendizagem tênue e de fácil 
+                compreendimento!</p>
+                <p>Além de uma nova funcionalidade para o aprendizado, que são os jogos!</p>
+                <p>O site disponibilizar quiz e um console para realizar os desafios propostos a você!</p>
+                </div>
+            </div>
+        </div>
+        <div class="niveis">
+            <h1>Como anteriormente dito, separamos o aprendizado por níveis de conhecimentos.
+            Sendo eles:</h1>
+            <div class="opniveis">
+                <div class="nivel1">
+                    <img src="" alt="">
+                    <label></label>
+                </div>
+                <div class="nivel2">
+                    <img src="" alt="">
+                    <label></label>
+                </div>
+                <div class="nivel3">
+                    <img src="" alt="">
+                    <label></label>
+                </div>
+            </div>
         </div>
     </section>
     
