@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+:root{
+    --cor1: #000000;
+    --cor2: #2b07ba;
+    --cor3: #ffffff;
+    --cor4: #cbcbcb;
+    --cor5: #db1c1c;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    /* text-decoration: none; */
+    color: var(--cor3);
+}
+
+::-webkit-scrollbar{
+    width: 0.45em;
+    background-color: var(--cor2);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor1);
+    width: 0.45em;
+    border-radius: 2em;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.top{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    background-color: red;
+    transition: 0.5s;
+}
+.logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+    padding-left: 2em;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+}
+.op{
+    display: flex;
+    flex-direction: row;
+    width: 20em;
+    height: 2.5em;
+    border-radius: 2em;
+    background-color: pink;
+}
+.aulas{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background-color: aqua;
+}
+
+.perfil{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+    padding-right: 2em;
+}
+.cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    width: 7em;
+    height: 3em;
+    margin-right: 1em;
+    border-radius: 2em;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    width: 5em;
+    height: 3em;
+    border-radius: 2em;
+}
+.login a, .cadastro a{
+    text-decoration: none;
+}
+
+
+.mid{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-top: 20vh;
+    background-color: blue;
+}
+
+
+/*MUDAR O FOOTER COM URGENCIA*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35vh;
+    background-color: var(--cor2);
+    color: var(--cor3);
+}
+
+.footerL{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50vw;
+    height: 100%;
+    font-size: 6em;
+}
+.footerR{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    width: 50vw;
+    height: 100%;
+    font-size: 1.5em;
+}
+.bottop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.85em;
+}
+.botmid{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.botmid a{
+    margin-top: 1em;
+}
