@@ -16,8 +16,12 @@
         <nav class="logo"><a href="index.php"><img src="assets/" alt="Logo Learn Profit"></a></nav>
         <nav class="options">
             <div class="op">
-                <div class="aulas">Aulas</div>
-                <div class="suporte">Suporte</div>
+                <div class="aulas"><a href="">Aulas</a></div>
+                <div class="suporte"><a href="">Suporte</a></div>
+                <div class="questionario"><a href="pages/questionario/questionario.php">Questionário</a></div>
+            </div>
+            <div class="opg">
+                <div class="game"><a href="">Games</a></div>
             </div>
         </nav>
         <nav class="perfil">
@@ -57,16 +61,16 @@
             Sendo eles:</h1>
             <div class="opniveis">
                 <div class="nivel1">
-                    <img src="" alt="">
-                    <label></label>
+                    <img src="" alt="Imagem Nivel Iniciante">
+                    <label>Nivel Begginer:</label>
                 </div>
                 <div class="nivel2">
-                    <img src="" alt="">
-                    <label></label>
+                    <img src="" alt="Imagem Nivel Intermediário">
+                    <label>Nivel Median:</label>
                 </div>
                 <div class="nivel3">
-                    <img src="" alt="">
-                    <label></label>
+                    <img src="" alt="Imagem Nivel Avançado">
+                    <label>Nivel High:</label>
                 </div>
             </div>
         </div>
