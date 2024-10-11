@@ -58,6 +58,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 2em;
     width: 33%;
     height: 100%;
 }
@@ -70,10 +71,22 @@ body{
     background-color: pink;
 }
 .aulas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 100%;
-    text-align: center;
     background-color: aqua;
+    border-radius: 2em 0 0 2em;
+}
+.suporte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: greenyellow;
+    border-radius: 0 2em 2em 0;
 }
 
 .perfil{
