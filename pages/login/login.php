@@ -1,81 +1,52 @@
-<?php
-session_start(); // Inicia a sessão
-
-// Conexão com o banco de dados
-$host = 'localhost';
-$db = 'learn_profit';
-$user = 'root';
-$pass = '';
-
-$conn = new mysqli($host, $user, $pass, $db);
-
-// Verifica a conexão
-if ($conn->connect_error) {
-    die("Conexão falhou: " . $conn->connect_error);
-}
-
-// Processa o formulário de login
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-
-    // Busca o usuário no banco de dados
-    $stmt = $conn->prepare("SELECT idUsuario, senha FROM Usuarios WHERE email = ?");
-    $stmt->bind_param("s", $email);
-    $stmt->execute();
-    $stmt->store_result();
-
-    // Verifica se o usuário existe
-    if ($stmt->num_rows > 0) {
-        $stmt->bind_result($idUsuario, $senhaHash);
-        $stmt->fetch();
-
-        // Verifica a senha
-        if (password_verify($senha, $senhaHash)) {
-            // Senha correta, inicia a sessão
-            $_SESSION['idUsuario'] = $idUsuario;
-            header("Location: index.php"); // Redireciona para a página inicial
-            exit();
-        } else {
-            echo "Senha incorreta.";
-        }
-    } else {
-        echo "Usuário não encontrado.";
-    }
-
-    $stmt->close();
-}
-
-$conn->close();
-?>
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Login - Learn Profit</title>
+    <title>Learn Profit2</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <h1>Login</h1>
+    <!-- Menu superior do site a Esquerda(Logo que ao clicar volta para home indiferente da pagina), 
+        meio(páginas de aulas para realizar as atividades e aprender conforme o level do usuário, área de suporte ao usuário),
+        direita(perfil do usuário, aonde ele irá clicar para fazer o logIn ou o cadastro no site) -->
+    <header class="top">
+        <nav class="logo"><a href="index.php"><img src="assets/" alt="Logo Learn Profit"></a></nav>
+        <nav class="options">
+            <div class="op">
+                <div class="aulas">Aulas</div>
+                <div class="suporte">Suporte</div>
+            </div>
+        </nav>
+        <nav class="perfil">
+            <div class="cadastro"><a href="./pages/cadastro/cadastro.php">Cadastrar</a></div>
+            <div class="login"><a href="./pages/login/login.php">Login</a></div>
+        </nav>
     </header>
     
-    <section>
-        <form action="login.php" method="post">
-            <div>
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email" required>
+    <!-- Corpo do site, onde ficará todas as informações relevantes presentes nos protótipos -->
+    <section class="mid">
+        
+        
+
+    
+    <!-- Todas as informações dos Devs presentes aqui(forma de crédito por ajudar a desenvolver o site) MUDAR COM URGENCIA -->
+    <footer class="bot">
+        <section class="footerL">Learn Profit</section>
+        <section class="footerR">
+            <div class="bottop">GitHub<i class='bx bxl-github'></i></div>
+            <div class="botmid">
+                <a href="https://github.com/KiraZiki">Daniel Jacometo</a>
+                <a href="https://github.com/samcioli">Samira Ocioli</a>
+                <a href="https://github.com/Camarginho">Gabriel Camargo</a>
             </div>
-            <div>
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
-            </div>
-            <button type="submit">Entrar</button>
-        </form>
-        <p>Não tem uma conta? <a href="cadastro.php">Cadastrar</a></p>
-    </section>
+        </section>
+    </footer>
+
+
+    <script src='main.js'></script>
 </body>
 </html>

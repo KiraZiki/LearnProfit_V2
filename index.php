@@ -21,8 +21,8 @@
             </div>
         </nav>
         <nav class="perfil">
-            <div class="cadastro"><a href="">Cadastrar</a></div>
-            <div class="login"><a href="">Login</a></div>
+            <div class="cadastro"><a href="./pages/cadastro/cadastro.php">Cadastrar</a></div>
+            <div class="login"><a href="./pages/login/login.php">Login</a></div>
         </nav>
     </header>
     
