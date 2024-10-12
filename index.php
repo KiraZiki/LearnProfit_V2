@@ -16,8 +16,8 @@
         <nav class="logo"><a href="index.php"><img src="assets/" alt="Logo Learn Profit"></a></nav>
         <nav class="options">
             <div class="op">
-                <div class="aulas"><a href="">Aulas</a></div>
-                <div class="suporte"><a href="">Suporte</a></div>
+                <div class="aulas"><a href="pages/aulas/">Aulas</a></div>
+                <div class="suporte"><a href="pages/suporte/">Suporte</a></div>
                 <div class="questionario"><a href="pages/questionario/questionario.php">Questionário</a></div>
             </div>
             <div class="opg">
@@ -26,7 +26,6 @@
         </nav>
         <nav class="perfil">
             <div class="cadastro"><a href="./pages/cadastro/cadastro.php">Cadastrar</a></div>
-            <div class="login"><a href="./pages/login/login.php">Login</a></div>
         </nav>
     </header>
     
@@ -61,15 +60,15 @@
             Sendo eles:</h1>
             <div class="opniveis">
                 <div class="nivel1">
-                    <img src="" alt="Imagem Nivel Iniciante">
+                    <img src="img/beginner.png" alt="Imagem Nivel Iniciante" style="width: 15em; height: 15em;">
                     <label>Nivel Begginer:</label>
                 </div>
                 <div class="nivel2">
-                    <img src="" alt="Imagem Nivel Intermediário">
+                    <img src="img/median.png" alt="Imagem Nivel Intermediário" style="width: 15em; height: 15em;">
                     <label>Nivel Median:</label>
                 </div>
                 <div class="nivel3">
-                    <img src="" alt="Imagem Nivel Avançado">
+                    <img src="img/high.png" alt="Imagem Nivel Avançado" style="width: 15em; height: 15em;">
                     <label>Nivel High:</label>
                 </div>
             </div>

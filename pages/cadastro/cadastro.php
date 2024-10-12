@@ -80,68 +80,78 @@ $conn->close();
 </head>
 <body>
 <header class="top">
-        <nav class="logo"><a href="index.php"><img src="assets/" alt="Logo Learn Profit"></a></nav>
+        <nav class="logo"><a href="../../"><img src="assets/" alt="Logo Learn Profit"></a></nav>
         <nav class="options">
             <div class="op">
-                <div class="aulas">Aulas</div>
-                <div class="suporte">Suporte</div>
+                <div class="aulas"><a href="">Aulas</a></div>
+                <div class="suporte"><a href="">Suporte</a></div>
+                <div class="questionario"><a href="../questionario/questionario.php">Questionário</a></div>
+            </div>
+            <div class="opg">
+                <div class="game"><a href="">Games</a></div>
             </div>
         </nav>
         <nav class="perfil">
             <div class="cadastro"><a href="./pages/cadastro/cadastro.php">Cadastrar</a></div>
-            <div class="login"><a href="./pages/login/login.php">Login</a></div>
         </nav>
-    </header>
+</header>
     
-    <section class="mid">
-        <h1>Cadastrar</h1>
-        <form action="" method="post">
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Nome" required>
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-            </div>
-            <div>
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" placeholder="Senha" required>
-            </div>
-            <button type="submit" name="cadastrar">Cadastrar</button>
-        </form>
-        <div>
-            <p>cadastro</p>
-            <p>login</p>
+<section class="mid">
+    <div class="cadlogMenu">
+        <!-- Formulário de Cadastro -->
+        <div id="cadastroForm" class="cadastroForm" style="display: none;">
+            <h1>Cadastrar</h1>
+            <form action="" method="post">
+                <div>
+                    <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                </div>
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                </div>
+                <button type="submit" name="cadastrar">Cadastrar</button>
+            </form>
         </div>
-        <h1>Login</h1>
-        <form action="" method="post">
-            <div>
-                <label for="email_login">Email:</label>
-                <input type="email" id="email_login" name="email_login" placeholder="Email" required>
-            </div>
-            <div>
-                <label for="senha_login">Senha:</label>
-                <input type="password" id="senha_login" name="senha_login" placeholder="Senha" required>
-            </div>
-            <button type="submit" name="entrar">Entrar</button>
-        </form>
-        <p>Não tem uma conta? <a href="#">Cadastrar</a></p>
-    </section>
+        
+        <!-- Div para alternar entre Cadastro e Login -->
+        <div class="cadlogSwitch">
+            <p id="showCadastro" style="display: flex; justify-content: center; align-items: center; cursor: pointer; width: 100%; height: 100%;">Cadastro</p>
+            <p id="showLogin" style="display: flex; justify-content: center; align-items: center; cursor: pointer; display: none; width: 100%; height: 100%;">Login</p>
+        </div>
 
-    <footer class="bot">
-        <section class="footerL">Learn Profit</section>
-        <section class="footerR">
-            <div class="bottop">GitHub<i class='bx bxl-github'></i></div>
-            <div class="botmid">
-                <a href="https://github.com/KiraZiki">Daniel Jacometo</a>
-                <a href="https://github.com/samcioli">Samira Ocioli</a>
-                <a href="https://github.com/Camarginho">Gabriel Camargo</a>
-            </div>
-        </section>
-    </footer>
+        <!-- Formulário de Login -->
+        <div id="loginForm" class="loginForm">
+            <h1>Login</h1>
+            <form action="" method="post">
+                <div>
+                    <input type="email" id="email_login" name="email_login" placeholder="Email" required>
+                </div>
+                <div>
+                    <input type="password" id="senha_login" name="senha_login" placeholder="Senha" required>
+                </div>
+                <button type="submit" name="entrar">Entrar</button>
+            </form>
+        </div>
+    </div>
+</section>
 
+<!-- Adicione este script JavaScript -->
+<script>
+    document.getElementById('showCadastro').addEventListener('click', function() {
+        document.getElementById('cadastroForm').style.display = 'flex';
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('showCadastro').style.display = 'none';
+        document.getElementById('showLogin').style.display = 'flex';
+    });
 
-    <script src='main.js'></script>
+    document.getElementById('showLogin').addEventListener('click', function() {
+        document.getElementById('cadastroForm').style.display = 'none';
+        document.getElementById('loginForm').style.display = 'flex';
+        document.getElementById('showCadastro').style.display = 'flex';
+        document.getElementById('showLogin').style.display = 'none';
+    });
+</script>
 </body>
 </html>

@@ -10,6 +10,7 @@
 *{
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 
 a{
@@ -42,7 +43,7 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     background-color: red;
     transition: 0.5s;
 }
@@ -58,22 +59,62 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 2em;
     width: 33%;
     height: 100%;
 }
 .op{
     display: flex;
     flex-direction: row;
-    width: 20em;
+    justify-content: center;
+    align-items: center;
+    width: 25em;
     height: 2.5em;
     border-radius: 2em;
     background-color: pink;
 }
 .aulas{
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
     height: 100%;
-    text-align: center;
     background-color: aqua;
+    border-radius: 2em 0 0 2em;
+}
+.suporte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+    background-color: brown;
+}
+.questionario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+    background-color: greenyellow;
+    border-radius: 0 2em 2em 0;
+}
+
+.opg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 2.5em;
+}
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+    border-radius: 2em;
+    background-color: lime;
 }
 
 .perfil{
@@ -94,29 +135,85 @@ body{
     margin-right: 1em;
     border-radius: 2em;
 }
-.login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: orange;
-    width: 5em;
-    height: 3em;
-    border-radius: 2em;
-}
-.login a, .cadastro a{
-    text-decoration: none;
-}
 
 
 .mid{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    height: 100vh;
-    margin-top: 20vh;
+    height: auto;
     background-color: blue;
 }
+.quizForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 35em;
+    margin: 1rem;
+    font-size: 2em;
+    border-radius: 1.2em;
+}
+.quizForm>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 1em;
+}
+.quizForm>div>div>input[type="radio"]{
+    width: 2em;
+    height: 2em;
+}
 
-
+.container>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor4);
+    padding: 1em;
+    width: 90%;
+    text-align: center; 
+    border-radius: 1em;
+}
+.container-hidden{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hidden {
+    display: none;
+    
+}
+.campo-div {
+    text-align: center; 
+}
+.ponto {
+    color: var(--cor1);
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    font-size: 1.5em;
+    color: var(--cor1);
+}
+.botao{
+    background-color: none;
+    border: 1px solid greenyellow;
+    width: 20em;
+    height: 4em;
+    font-size: 1em;
+}
 /*MUDAR O FOOTER COM URGENCIA*/
 footer{
     display: flex;
@@ -164,35 +261,4 @@ footer{
 }
 .botmid a{
     margin-top: 1em;
-}
-.container {
-    background-color: var(--cor4);
-    padding: 1em;
-    width: 90%;
-    text-align: center; 
-    border-radius: 1em;
-}
-.hidden {
-    display: none;
-    
-}
-.campo-div {
-    margin-bottom: 10px;
-    text-align: center; 
-}
-.ponto {
-    color: var(--cor1);
-    font-size: 2em;
-    margin-top: 1em;
-    text-align: center;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.texto{
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
-    font-size: 1.8em;
-    padding-left: 220px;
-    color: var(--cor1);
 }
