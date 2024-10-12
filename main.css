@@ -13,197 +13,56 @@
     text-decoration: none;
 }
 
-a{
-    /* text-decoration: none; */
-    color: var(--cor3);
-}
-
-::-webkit-scrollbar{
-    width: 0.45em;
-    background-color: var(--cor2);
-}
-::-webkit-scrollbar-thumb{
-    background-color: var(--cor1);
-    width: 0.45em;
-    border-radius: 2em;
-}
-
 body{
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
 }
 
-.top{
+.container{
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 20vh;
-    background-color: red;
+    width: 40%;
+    height: 30%;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30em;
+    height: 5em;
+    margin: 1em;
+    cursor: pointer;
+    border: 5px solid black;
+    border-radius: 3em;
     transition: 0.5s;
-}
-.logo{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 33%;
-    height: 100%;
-    padding-left: 2em;
-}
-.options{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2em;
-    width: 33%;
-    height: 100%;
-}
-.op{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 25em;
-    height: 2.5em;
-    border-radius: 2em;
-    background-color: pink;
-}
-.aulas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
-    height: 100%;
-    background-color: aqua;
-    border-radius: 2em 0 0 2em;
-}
-.suporte{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
-    height: 100%;
-    background-color: brown;
-}
-.questionario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 33%;
-    height: 100%;
-    background-color: greenyellow;
-    border-radius: 0 2em 2em 0;
+    font-size: xx-large;
+    color: black;
 }
 
-.opg{
+.estudo, .game {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 15vw;
-    height: 2.5em;
-}
-.game{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 75%;
-    height: 100%;
-    border-radius: 2em;
-    background-color: lime;
-}
-
-.perfil{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    width: 33%;
-    height: 100%;
-    padding-right: 2em;
-}
-.cadastro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: yellow;
-    width: 7em;
-    height: 3em;
-    margin-right: 1em;
-    border-radius: 2em;
-}
-
-.mid{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    margin-top: 20vh;
-    background-color: blue;
-}
-
-.sobre{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.sobre>h1{
-    font-size: 2.5em;
-}
-
-/*MUDAR O FOOTER COM URGENCIA*/
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 35vh;
-    margin-bottom: -1%;
-    background-color: var(--cor2);
-    color: var(--cor3);
-}
-
-.footerL{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    width: 50vw;
-    height: 100%;
-    font-size: 6em;
-}
-.footerR{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: end;
-    width: 50vw;
-    height: 99%;
-    font-size: 1.5em;
-}
-.bottop{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-size: 1.85em;
-}
-.botmid{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
     align-items: center;
     width: 100%;
     height: 100%;
 }
-.botmid a{
-    margin-top: 1em;
+
+.estudo:hover {
+    color: white;
+}
+
+a:hover>.game {
+    color: green;
+    border: 5px solid purple;
+    border-radius: 3em;
+}
+a[game]:hover>.estudo{
+    color: white;
 }

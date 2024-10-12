@@ -1,20 +1,50 @@
-window.addEventListener('scroll', function() {
-    const elemento = document.querySelector('.top');
-    
-    if (window.scrollY <= 30) {
-        document.querySelector('.top').style.height = "20vh";
-        document.querySelector('.mid').style.marginTop = "20vh";
-    }
-    else if(this.window.scrollY <=39){
-        document.querySelector('.top').style.height = "15vh";
-        document.querySelector('.mid').style.margin = "10vh 0 0 0";
-        document.querySelector('.top').style.transition = "0.07s";
-        document.querySelector('.mid').style.transition = "0.07s";
-    }
-    else if(this.window.scrollY >= 40){
-        document.querySelector('.top').style.height = "10vh";
-        document.querySelector('.mid').style.margin = "10vh 0 0 0";
-        document.querySelector('.top').style.transition = "0.2s";
-        document.querySelector('.mid').style.transition = "0.2s";
-    }
+document.addEventListener('DOMContentLoaded', (event) => {
+    const estudoButton = document.querySelector('.estudo');
+    const gameButton = document.querySelector('.game');
+    const container = document.querySelector('.container');
+
+    let lastAction = '';
+
+    estudoButton.addEventListener('mouseover', () => {
+        document.body.style.transition = 'background-color 0.35s';
+        document.body.style.backgroundColor = 'darkblue';
+        estudoButton.style.transition = 'color 0.35s';
+        estudoButton.style.color = 'white';
+        lastAction = 'estudo';
+    });
+
+    gameButton.addEventListener('mouseover', () => {
+        document.body.style.transition = 'background-color 0.35s';
+        document.body.style.backgroundColor = 'black';
+        gameButton.style.transition = 'color 0.35s, border-color 0.35s';
+        gameButton.style.color = 'green';
+        gameButton.style.borderColor = 'purple';
+        lastAction = 'game';
+    });
+
+    container.addEventListener('mouseleave', () => {
+        document.body.style.transition = 'background-color 0.35s';
+        document.body.style.backgroundColor = '';
+        estudoButton.style.transition = 'color 0.35s';
+        estudoButton.style.color = '';
+        gameButton.style.transition = 'color 0.35s, border-color 0.35s';
+        gameButton.style.color = '';
+        gameButton.style.borderColor = 'black';
+        lastAction = '';
+    });
+
+    container.addEventListener('mouseenter', () => {
+        if (lastAction === 'estudo') {
+            document.body.style.transition = 'background-color 0.35s';
+            document.body.style.backgroundColor = 'darkblue';
+            estudoButton.style.transition = 'color 0.35s';
+            estudoButton.style.color = 'white';
+        } else if (lastAction === 'game') {
+            document.body.style.transition = 'background-color 0.35s';
+            document.body.style.backgroundColor = 'black';
+            gameButton.style.transition = 'color 0.35s, border-color 0.35s';
+            gameButton.style.color = 'green';
+            gameButton.style.borderColor = 'purple';
+        }
+    });
 });
