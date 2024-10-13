@@ -13,19 +13,19 @@
         meio(páginas de aulas para realizar as atividades e aprender conforme o level do usuário, área de suporte ao usuário),
         direita(perfil do usuário, aonde ele irá clicar para fazer o logIn ou o cadastro no site) -->
     <header class="top">
-    <nav class="logo"><a href="index.php"><img src="../../assets/HydraIcon.png" alt="Logo Learn Profit" style="width: 8em; height: 8em;"></a></nav>
+    <nav class="logo"><a href="../../"><img src="../../../assets/HydraIcon.png" alt="Logo Learn Profit" class="imglogo"></a></nav>
         <nav class="options">
             <div class="op">
-                <div class="aulas"><a href="pages/aulas/">Aulas</a></div>
-                <div class="suporte"><a href="">Suporte</a></div>
-                <div class="questionario"><a href="pages/questionario/questionario.php">Questionário</a></div>
+                <div class="aulas"><a href="../aulas/">Aulas</a></div>
+                <div class="suporte"><a href=".">Suporte</a></div>
+                <div class="questionario"><a href="../questionario/">Questionário</a></div>
             </div>
             <div class="opg">
-                <div class="game"><a href="">Games</a></div>
+                <div class="game"><a href="../../../Game/">Games</a></div>
             </div>
         </nav>
         <nav class="perfil">
-            <div class="cadastro"><a href="./pages/cadastro/cadastro.php">Cadastrar</a></div>
+            <div class="cadastro"><a href="../cadastro/">Cadastrar</a></div>
         </nav>
     </header>
     

@@ -177,6 +177,9 @@ input[type="submit"]{
     text-align: center;
     background-color: greenyellow;
 }
+.imglogo {
+    height: 4em;
+}
 
 /*MUDAR O FOOTER COM URGENCIA*/
 footer{

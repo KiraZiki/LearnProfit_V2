@@ -10,15 +10,15 @@
 </head>
 <body>
 <header class="top">
-<nav class="logo"><a href="index.php"><img src="../../assets/HydraIcon.png" alt="Logo Learn Profit" style="width: 8em; height: 8em;"></a></nav>
+<nav class="logo"><a href="../../"><img src="../../../assets/HydraIcon.png" alt="Logo Learn Profit" class="imglogo"></a></nav>
         <nav class="options">
             <div class="op">
-                <div class="aulas"><a href="">Aulas</a></div>
-                <div class="suporte"><a href="">Suporte</a></div>
-                <div class="questionario"><a href="../questionario/questionario.php">Questionário</a></div>
+                <div class="aulas"><a href="../aulas">Aulas</a></div>
+                <div class="suporte"><a href="../suporte/">Suporte</a></div>
+                <div class="questionario"><a href=".">Questionário</a></div>
             </div>
             <div class="opg">
-                <div class="game"><a href="">Games</a></div>
+                <div class="game"><a href="../../../Game/">Games</a></div>
             </div>
         </nav>
         <nav class="perfil">
@@ -27,7 +27,7 @@
 </header>
 <div class="mid">
     <!-- inicio do questionario -->
-    <p class="maior">Teste sua proficiência</p>
+    <p class="maior" style="text-align: center; font-size: 3em; background-color: #ffffff; margin-top: 0.25em; border-radius: 2em; width: 10em;">Teste sua proficiência</p>
                 <form id="quizForm" class="quizForm">
                     <!-- Nível Fácil -->
 <div>

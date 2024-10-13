@@ -34,6 +34,10 @@ body{
     width: 100%;
 }
 
+.imglogo {
+    height: 8em;
+}
+
 .top{
     display: flex;
     position: fixed;
@@ -151,12 +155,24 @@ body{
 
 .mid{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
     margin-top: 20vh;
     background-color: blue;
+}
+.mid>div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: #fff;
+    width: 40em;
+    padding: 1em;
+    border-radius: 1.25em;
 }
 
 

@@ -13,19 +13,19 @@
         meio(páginas de aulas para realizar as atividades e aprender conforme o level do usuário, área de suporte ao usuário),
         direita(perfil do usuário, aonde ele irá clicar para fazer o logIn ou o cadastro no site) -->
     <header class="top">
-    <nav class="logo"><a href="../../"><img src="../../../assets/HydraIcon.png" alt="Logo Learn Profit" style="width: 8em; height: 8em;"></a></nav>
+    <nav class="logo"><a href="../../"><img src="../../../assets/HydraIcon.png" alt="Logo Learn Profit" class="imglogo"></a></nav>
         <nav class="options">
             <div class="op">
-                <div class="aulas"><a href="">Aulas</a></div>
-                <div class="suporte"><a href="">Suporte</a></div>
-                <div class="questionario"><a href="pages/questionario/questionario.php">Questionário</a></div>
+                <div class="aulas"><a href=".">Aulas</a></div>
+                <div class="suporte"><a href="../suporte">Suporte</a></div>
+                <div class="questionario"><a href="../questionario/">Questionário</a></div>
             </div>
             <div class="opg">
-                <div class="game"><a href="">Games</a></div>
+                <div class="game"><a href="../../../Game/">Games</a></div>
             </div>
         </nav>
         <nav class="perfil">
-            <div class="cadastro"><a href="./pages/cadastro/cadastro.php">Cadastrar</a></div>
+            <div class="cadastro"><a href="../pages/cadastro/">Cadastrar</a></div>
         </nav>
     </header>
     
@@ -38,12 +38,12 @@
         </div>
         <div class="midmid">
             <div class="midtop">
-                <img src="../../img/beginner.png" alt="Image Beginner" class="small-img selected" data-index="0">
-                <img src="../../img/median.png" alt="Image Median" class="small-img" data-index="1">
-                <img src="../../img/high.png" alt="Image High" class="small-img" data-index="2">
+                <img src="../../../assets/Begginer.png" alt="Image Beginner" class="small-img selected" data-index="0">
+                <img src="../../../assets/Median.png" alt="Image Median" class="small-img" data-index="1">
+                <img src="../../../assets/HydraIcon.png" alt="Image High" class="small-img" data-index="2">
             </div>
             <div class="midmidmid">
-                <img src="../../img/beginner.png" alt="Image Beginner" class="large-img" id="main-image">
+                <img src="../../../assets/Begginer.png" alt="Image Beginner" class="large-img" id="main-image">
                 <div class="enter" id="enter-btn" style="pointer: none;">Entrar no nível</div>
             </div>
             <div class="midbot">

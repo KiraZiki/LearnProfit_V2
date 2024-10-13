@@ -18,10 +18,10 @@
             <div class="op">
                 <div class="aulas"><a href="pages/aulas/">Aulas</a></div>
                 <div class="suporte"><a href="pages/suporte/">Suporte</a></div>
-                <div class="questionario"><a href="pages/questionario/questionario.php">Questionário</a></div>
+                <div class="questionario"><a href="pages/questionario/">Questionário</a></div>
             </div>
             <div class="opg">
-                <div class="game"><a href="pages/game/">Games</a></div>
+                <div class="game"><a href="../Game/">Games</a></div>
             </div>
         </nav>
         <nav class="perfil">
@@ -61,15 +61,15 @@
             <div class="opniveis">
                 <div class="nivel1">
                     <img src="../assets/Begginer.png" alt="Imagem Nivel Iniciante" style="width: 15em; height: 15em;">
-                    <label>Nivel Begginer:</label>
+                    <label>Nivel Begginer: Este nível é perfeito para iniciantes em Estrutura de Dados.</label>
                 </div>
                 <div class="nivel2">
                     <img src="../assets/Median.png" alt="Imagem Nivel Intermediário" style="width: 15em; height: 15em;">
-                    <label>Nivel Median:</label>
+                    <label>Nivel Median: Este nível é perfeito para os programadores mais familiarizados com Estrutura de Dados.</label>
                 </div>
                 <div class="nivel3">
                     <img src="../assets/HydraIcon.png" alt="Imagem Nivel Avançado" style="width: 15em; height: 15em;">
-                    <label>Nivel High:</label>
+                    <label>Nivel High: Este nível é para você "DEV" experiente na programação em Estrutura de Dados.</label>
                 </div>
             </div>
         </div>

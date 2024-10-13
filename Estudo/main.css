@@ -151,15 +151,74 @@ body{
     background-color: blue;
 }
 
-.sobre{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.niveis, .sobre {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
     text-align: center;
 }
-.sobre>h1{
-    font-size: 2.5em;
+
+.niveis h1, .sobre h1 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.opniveis {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.opniveis .nivel1, .opniveis .nivel2, .opniveis .nivel3 {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.opniveis img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.opniveis label {
+    display: block;
+    margin-top: 10px;
+    color: #555555;
+}
+
+.objetivo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.leftimg {
+    background-image: url('../assets/goal.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.righttext {
+    max-width: 500px;
+    text-align: left;
+    margin: 10px;
+}
+
+.righttext p {
+    color: #555555;
+    margin-bottom: 10px;
 }
 
 /*MUDAR O FOOTER COM URGENCIA*/
