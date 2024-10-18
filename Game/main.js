@@ -123,15 +123,6 @@ function verificarResposta(correta) {
     }
 }
 
-function exibirTelaDesculpas() {
-    document.body.innerHTML = `
-        <h1>Desculpas</h1>
-        <p>Professor, desculpe por não ter feito exatamente o que foi pedido. Meu grupo passa por dificuldades e eu acabei fazendo sozinho. Este foi o jeito que achei de expressar isto.</p>
-        <p>Ass: Dev_ZIKI</p>
-        <a href="../"><button>Voltar ao Início</button></a>
-    `;
-}
-
 function reiniciarFacil() {
     moedas = 0;
     atualizarMoedas();
