@@ -105,6 +105,60 @@
             <p><strong>Conclusão</strong></p>
             <p>Os Tipos Abstratos de Dados são uma ferramenta poderosa na programação que permite a criação de estruturas de dados eficientes e reutilizáveis. Eles fornecem uma maneira de encapsular e abstrair a lógica de manipulação de dados, facilitando a manutenção e a reutilização do código. Compreender e saber implementar TADs em PHP é essencial para desenvolver soluções de software robustas e escaláveis.</p>
         </div>
+        <div>
+            <p><strong>Desvantagens dos TADs</strong></p>
+            <p>Overhead: A abstração pode introduzir um overhead adicional em termos de desempenho e uso de memória.</p>
+            <p>Complexidade: Definir e implementar TADs pode ser mais complexo do que usar estruturas de dados simples diretamente.</p>
+        </div>
+        <div>
+            <p><strong>Aula sobre Árvore Trie</strong></p>
+            <p>A Árvore Trie (ou Prefix Tree) é uma estrutura de dados usada para armazenar strings de forma eficiente, especialmente em cenários de busca de prefixos. Ela é particularmente útil em algoritmos de autocompletar e buscas de palavras.</p>
+        </div>
+        <div>
+            <p><strong>Aula sobre Árvore Trie</strong></p>
+            <p><strong><br>Estrutura:</strong> Cada nó da árvore representa um caractere de uma string. As strings compartilham nós comuns quando possuem prefixos em comum, o que torna a Trie eficiente para buscas e prefixos.
+            <strong><br>Busca:</strong> A busca por uma palavra em uma Trie é realizada seguindo os caracteres da palavra em cada nível da árvore. A operação é rápida, com tempo O(k), onde k é o comprimento da palavra.
+            <strong><br>Inserção:</strong> Para inserir uma palavra, percorre-se a árvore de acordo com os caracteres da palavra. Se um nó não existir para um caractere, ele é criado.
+            <strong><br>Remoção:</strong> A remoção de palavras pode exigir a verificação de nós e a exclusão de nós quando não houver mais palavras compartilhando esse prefixo.
+            <strong><br>Vantagens:</strong> Busca e inserção eficientes para strings e prefixos, tornando a Trie muito útil para dicionários e sugestões de autocompletar.
+            <strong><br>Desvantagens:</strong> Usa mais memória do que outras estruturas de dados como as ABB, pois cada nó precisa armazenar um ponteiro para cada possível caractere.
+</p>
+        </div>
+        <div>
+        <p><strong>Exemplo de uma Árvore TRIE:</strong></p>
+            <img src="../../../../img/Arvore binaria de busca/arvoretrie.png">
+        </div>
+        <div>
+            <p><strong>Conclusão</strong></p>
+            <p>A Árvore Trie é uma estrutura de dados extremamente útil quando o objetivo é realizar buscas rápidas, especialmente quando lidamos com um grande volume de strings ou quando a busca por prefixos é necessária. Sua capacidade de compartilhar prefixos entre as palavras torna as operações de busca e inserção muito eficientes. No entanto, o principal ponto de atenção é o consumo de memória, que pode ser significativo dependendo do número de palavras e do tamanho dos caracteres armazenados. Mesmo com essa desvantagem, suas vantagens são evidentes em casos de autocompletar, dicionários e outras aplicações que exigem uma busca rápida e eficiente por prefixos.</p>
+        </div>
+        <div>
+            <p><strong>Aula sobre Árvore Rubro-Negra</strong></p>
+            <p>A Árvore Rubro-Negra é uma árvore binária de busca auto-balanceada, onde cada nó possui uma cor (vermelho ou negro). Ela é uma variação das árvores binárias de busca que garante um balanceamento eficiente, mantendo o tempo de operação das operações em O(log n).</p>
+        </div>
+        <div>
+            <p><strong>Propriedades:</strong></p>
+            <p>Cada nó é vermelho ou negro.<br>
+A raiz é sempre negra.<br>
+Os filhos de um nó vermelho são sempre negros.<br>
+De qualquer nó, o número de nós negros no caminho até as folhas deve ser o mesmo (propriedade de balanceamento).<br></p>
+        </div>
+        <div>
+            <p><strong>Aula sobre Árvore Rubro-Negra</strong></p>
+            <p><strong><br>Busca: </strong>A busca em uma árvore Rubro-Negra segue a mesma lógica das árvores binárias de busca, com a vantagem de que a estrutura é balanceada, garantindo O(log n) de complexidade.
+            <strong><br>Inserção: </strong>Após a inserção de um nó, a árvore pode precisar de ajustes (rotações e mudanças de cores) para manter suas propriedades de balanceamento.
+            <strong><br>Remoção: </strong>A remoção também pode exigir várias rotações e mudanças de cor para garantir que as propriedades da árvore Rubro-Negra sejam mantidas.
+            <strong><br>Vantagens: </strong>A árvore Rubro-Negra garante um balanceamento eficiente, proporcionando operações rápidas com complexidade O(log n), e é frequentemente usada em implementações de mapas e conjuntos.
+            <strong><br>Desvantagens: </strong>A implementação é mais complexa devido às regras de balanceamento e manutenção das cores dos nós.</p>
+        </div>
+        <div>
+        <p><strong>Exemplo de uma Árvore Rubro-Negra:</strong></p>
+            <img src="../../../../img/Arvore binaria de busca/arvorerubro.png">
+        </div>
+        <div>
+            <p><strong>Conclusão</strong></p>
+            <p>A Árvore Rubro-Negra é uma solução eficiente para manter uma árvore binária de busca balanceada. Suas propriedades garantem que as operações de inserção, remoção e busca sejam realizadas de maneira otimizada, sempre com complexidade O(log n), o que é crucial em sistemas que requerem alto desempenho e grande volume de dados. Embora sua implementação seja mais complexa devido à necessidade de ajustes após cada operação, a garantia de balanceamento torna-a uma escolha popular em diversas aplicações, como na implementação de estruturas de dados como mapas e conjuntos. Seu uso é vantajoso em cenários onde o equilíbrio constante da árvore é essencial para evitar degradação de desempenho.</p>
+        </div>
     </section>
     
     <!-- Todas as informações dos Devs presentes aqui(forma de crédito por ajudar a desenvolver o site) MUDAR COM URGENCIA -->

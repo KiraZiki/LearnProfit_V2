@@ -121,6 +121,37 @@
             <p>Embora sejam mais complexas de implementar e usem mais memória do que as listas simplesmente encadeadas, suas vantagens em flexibilidade e eficiência fazem delas uma escolha útil em muitas aplicações.</p>
             <p>Compreender como implementá-las em PHP é fundamental para desenvolver algoritmos e estruturas de dados avançadas.</p>
         </div>
+        <div>
+            <p><strong>Aula sobre Árvore B</strong></p>
+            <p>A Árvore B é uma árvore auto-balanceada usada para armazenar grandes volumes de dados, comumente encontrada em sistemas de gerenciamento de banco de dados e sistemas de arquivos. Ao contrário das árvores binárias de busca (ABB), cada nó em uma Árvore B pode ter mais de dois filhos. Ela mantém as chaves de forma ordenada, garantindo que todos os caminhos da raiz até as folhas tenham a mesma profundidade, o que garante eficiência nas operações de busca, inserção e remoção.</p>
+        </div>
+        <div>
+            <p><strong>Busca: </strong>Realizada de forma similar à ABB, mas permitindo múltiplos filhos por nó.
+            <strong><br>Inserção: </strong>Ao inserir uma chave, se um nó atingir o limite de chaves, ele se divide e uma chave é promovida para o nó pai.
+            <strong><br>Remoção: </strong>Requer fusão ou empréstimo de chaves para manter a árvore balanceada.
+            <strong><br>Vantagens: </strong>Eficiência no acesso ao disco e tempo de operação de O(log n).
+            <strong><br>Desvantagens: </strong>Complexa de implementar devido à necessidade de gerenciar múltiplos filhos e divisão de nós.</p>
+        </div>
+        <div>
+        <img src="../../../../img/Arvore binaria de busca/arvoreB.png">
+        </div>
+        <div>
+        <p><strong>Aula sobre Árvore AVL</strong></p>
+            <p>A Árvore AVL é uma árvore binária de busca balanceada onde a diferença de altura entre subárvores de qualquer nó (fator de balanceamento) é no máximo 1. Ela garante que as operações de busca, inserção e remoção sejam eficientes (O(log n)).</p>
+        </div>
+        <div>
+            <p><strong><br>Balanceamento: </strong>Após cada operação, a árvore verifica o fator de balanceamento de cada nó e realiza rotações (simples ou duplas) para manter a árvore balanceada.
+            <strong><br>Busca: </strong>Semelhante à ABB, mas com a garantia de que a árvore estará balanceada, o que garante tempo de operação O(log n).
+            <strong><br>Inserção e Remoção: </strong>Após uma inserção ou remoção, a árvore realiza rotações para manter o fator de balanceamento de cada nó dentro do limite.
+            <strong><br>Vantagens: </strong>Operações rápidas devido ao balanceamento garantido.
+            <strong><br>Desvantagens: </strong>A sobrecarga de manter o balanceamento pode tornar as operações de inserção e remoção mais complexas.</p>
+        </div>
+        <div>
+        <img src="../../../../img/Arvore binaria de busca/arvoreavl.png">
+        </div>
+        <div>
+            <p>Essas árvores são importantes em contextos onde o desempenho das operações precisa ser garantido em grandes volumes de dados.</p>
+        </div>
     </section>
     
     <!-- Todas as informações dos Devs presentes aqui(forma de crédito por ajudar a desenvolver o site) MUDAR COM URGENCIA -->

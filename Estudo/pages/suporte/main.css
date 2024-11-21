@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 :root{
     --cor1: #000000;
-    --cor2: #2b07ba;
+    --cor2: #440D0F;
     --cor3: #ffffff;
-    --cor4: #cbcbcb;
-    --cor5: #db1c1c;
+    --cor4: #84596B;
+    --cor5: #AF9BB6;
 }
-
 *{
     padding: 0;
     margin: 0;
@@ -44,7 +43,7 @@ body{
     align-items: center;
     width: 100%;
     height: 10vh;
-    background-color: red;
+    background-color: var(--cor4);
     transition: 0.5s;
 }
 .logo{
@@ -71,7 +70,7 @@ body{
     width: 25em;
     height: 2.5em;
     border-radius: 2em;
-    background-color: pink;
+    background-color: var(--cor5);
 }
 .aulas{
     display: flex;
@@ -79,7 +78,7 @@ body{
     align-items: center;
     width: 33%;
     height: 100%;
-    background-color: aqua;
+    background-color: var(--cor5);
     border-radius: 2em 0 0 2em;
 }
 .suporte{
@@ -88,7 +87,7 @@ body{
     align-items: center;
     width: 33%;
     height: 100%;
-    background-color: brown;
+    background-color: var(--cor5);
 }
 .questionario{
     display: flex;
@@ -96,7 +95,7 @@ body{
     align-items: center;
     width: 33%;
     height: 100%;
-    background-color: greenyellow;
+    background-color: var(--cor5);
     border-radius: 0 2em 2em 0;
 }
 
@@ -114,7 +113,7 @@ body{
     width: 75%;
     height: 100%;
     border-radius: 2em;
-    background-color: lime;
+    background-color: var(--cor5);
 }
 
 .perfil{
@@ -129,7 +128,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+    background-color: var(--cor5);
     width: 7em;
     height: 3em;
     margin-right: 1em;
@@ -143,7 +142,7 @@ body{
     width: 100%;
     height: 90vh;
     margin-top: 10vh;
-    background-color: blue;
+    background-color: var(--cor5);
 }
 .menu{
     display: flex;
@@ -153,7 +152,7 @@ body{
     width: 30em;
     height: 20em;
     border-radius: 2em;
-    background-color: red;
+    background-color: var(--cor5);
 }
 .menu>p{
     width: 90%;
@@ -173,9 +172,9 @@ input[type="submit"]{
     width: 40%;
     height: 3em;
     border-radius: 2em;
-    border: 1px solid green;
+    border: 1px solid var(--cor2);
     text-align: center;
-    background-color: greenyellow;
+    background-color: var(--cor4);
 }
 .imglogo {
     height: 4em;

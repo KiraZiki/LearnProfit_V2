@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 :root{
     --cor1: #000000;
-    --cor2: #2b07ba;
+    --cor2: #440D0F;
     --cor3: #ffffff;
-    --cor4: #cbcbcb;
-    --cor5: #db1c1c;
+    --cor4: #84596B;
+    --cor5: #AF9BB6;
 }
 
 *{
