@@ -24,6 +24,14 @@ function listarPastas($dir) {
 }
 
 $pastasDeJogos = listarPastas('.');
+
+// Dados simulados de itens disponíveis para compra com imagens
+$itens = [
+    ['idItem' => 1, 'nome' => 'Pirata', 'preco' => 50, 'imagem' => '../img/Produtos/idle 01.png'],
+    ['idItem' => 2, 'nome' => '???', 'preco' => 30, 'imagem' => 'images/escudo_ferro.png'],
+    ['idItem' => 3, 'nome' => '???', 'preco' => 10, 'imagem' => 'images/pocao_vida.png'],
+];
+
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +39,7 @@ $pastasDeJogos = listarPastas('.');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogos</title>
+    <title>Loja de Itens</title>
     <style>
         /* Resetando margens e padding */
         body, html {
@@ -64,7 +72,7 @@ $pastasDeJogos = listarPastas('.');
 
         nav ul li {
             display: inline-block;
-            margin-left: 20px; /* Espaço entre os itens */
+            margin-left: 20px;
         }
 
         nav ul li a {
@@ -91,7 +99,7 @@ $pastasDeJogos = listarPastas('.');
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            padding-top: 60px; /* Deixa espaço para a barra de menu */
+            padding-top: 80px; /* Deixa espaço para a barra de menu */
         }
 
         /* Título principal */
@@ -101,36 +109,47 @@ $pastasDeJogos = listarPastas('.');
             color: #4CAF50;
         }
 
-        /* Subtítulo e exibição das moedas */
+        /* Exibição das moedas */
         p {
             font-size: 1.2em;
             margin: 10px 0;
             color: #555;
         }
 
-        /* Lista de jogos */
-        ul {
+        /* Lista de itens */
+        ul.itens {
             list-style-type: none;
             padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
-        ul li {
-            margin: 10px 0;
-        }
-
-        ul li a {
-            font-size: 1.2em;
+        ul.itens li {
+            margin: 15px;
+            background-color: #fff;
             padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
             border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
-            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
         }
 
-        ul li a:hover {
-            background-color: #45a049;
+        ul.itens li img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        ul.itens li a {
+            font-size: 1.2em;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        ul.itens li a:hover {
+            color: #45a049;
         }
 
         /* Botão de logout */
@@ -155,21 +174,26 @@ $pastasDeJogos = listarPastas('.');
         <ul>
             <!-- Botão à esquerda -->
             <li><a href="../Estudo/index.php" class="left-button">Estudos</a></li>
-            <!-- Nome do usuário à direita (ajustado para ficar um pouco mais para a esquerda) -->
-            <li style="color: white; font-size: 1.2em; padding-top: 5x; margin-right: 20px;"><?php echo $_SESSION['nome']; ?></li>
+            <!-- Nome do usuário à direita -->
+            <li style="color: white; font-size: 1.2em; padding-top: 5px; margin-right: 20px;"><?php echo $_SESSION['nome']; ?></li>
         </ul>
     </nav>
 
-    <!-- Conteúdo principal -->
+    <!-- Exibição das moedas -->
     <h1>Moedas: <?php echo $moedas; ?></h1>
     
     <!-- Botão de logout -->
     <a href="logout.php" class="logout">Logout</a>
     
-    <h2>Jogos Disponíveis</h2>
-    <ul>
-        <?php foreach ($pastasDeJogos as $pasta) { ?>
-            <li><a href="<?php echo $pasta; ?>"><?php echo ucfirst($pasta); ?></a></li>
+    <h2>Itens Disponíveis para Compra</h2>
+    <ul class="itens">
+        <?php foreach ($itens as $item) { ?>
+            <li>
+                <img src="<?php echo $item['imagem']; ?>" alt="<?php echo $item['nome']; ?>">
+                <a href="comprar.php?idItem=<?php echo $item['idItem']; ?>">
+                    <?php echo ucfirst($item['nome']); ?> - <?php echo $item['preco']; ?> Moedas
+                </a>
+            </li>
         <?php } ?>
     </ul>
 </body>

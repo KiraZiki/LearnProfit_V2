@@ -92,7 +92,7 @@ $conn->close();
             </div>
         </nav>
         <nav class="perfil">
-            <div class="cadastro"><a href="./pages/cadastro/cadastro.php">Cadastrar</a></div>
+            <div class="cadastro"><a href=".../pages/cadastro/cadastro.php">Cadastrar</a></div>
         </nav>
 </header>
     

@@ -25,7 +25,7 @@
             </div>
         </nav>
         <nav class="perfil">
-            <div class="cadastro"><a href="../pages/cadastro/">Cadastrar</a></div>
+            <div class="cadastro"><a href="../cadastro/">Cadastrar</a></div>
         </nav>
     </header>
     

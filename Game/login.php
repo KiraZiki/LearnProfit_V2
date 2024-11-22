@@ -52,10 +52,80 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        /* Resetando margens e padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+
+        /* Estilizando a página para centralizar o conteúdo */
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Estilizando o formulário de login */
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Estilizando inputs e o botão */
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilizando links */
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo para mensagens de erro */
+        p {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Login</h1>
     <form method="POST" action="login.php">
+        <h1>Login</h1>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
         <br>
@@ -63,8 +133,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input type="password" id="senha" name="senha" required>
         <br>
         <button type="submit">Login</button>
+        <p>Não tem uma conta? <a href="register.php">Cadastre-se</a></p>
+        <?php if (isset($error)) { echo "<p>$error</p>"; } ?>
     </form>
-    <p>Não tem uma conta? <a href="register.php">Cadastre-se</a></p>
-    <?php if (isset($error)) { echo "<p>$error</p>"; } ?>
 </body>
 </html>
