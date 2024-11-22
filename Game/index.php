@@ -1,34 +1,47 @@
+<?php
+session_start();
+include 'db.php';
+
+if (!isset($_SESSION['idUsuario'])) {
+    header("Location: login.php");
+    exit();
+}
+
+$idUsuario = $_SESSION['idUsuario'];
+
+// Obter a quantidade de moedas do jogador
+$sql = "SELECT moedas FROM avatares WHERE idUsuario = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $idUsuario);
+$stmt->execute();
+$stmt->bind_result($moedas);
+$stmt->fetch();
+$stmt->close();
+
+function listarPastas($dir) {
+    $pastas = array_filter(glob($dir . '/*'), 'is_dir');
+    return array_map('basename', $pastas);
+}
+
+$pastasDeJogos = listarPastas('.');
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>HydraStacks</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js' defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos</title>
 </head>
 <body>
-    <h1>HydraStacks - Jogos de Estrutura de Dados</h1>
-    <div id="moedas">Moedas: 0</div>
-    <section id="facil">
-        <h2>Nível Fácil</h2>
-        <div id="jogo-facil"></div>
-        <button onclick="reiniciarFacil()">Reiniciar</button>
-        <p id="moedas-necessarias-medio">Moedas necessárias para avançar: 5</p>
-        <button id="comprar-medio" onclick="comprarNivel('medio')" disabled>Comprar Nível Médio</button>
-    </section>
-    <section id="medio" style="display: none;">
-        <h2>Nível Médio</h2>
-        <div id="jogo-medio"></div>
-        <button onclick="reiniciarMedio()">Reiniciar</button>
-        <p id="moedas-necessarias-dificil">Moedas necessárias para avançar: 10</p>
-        <button id="comprar-dificil" onclick="comprarNivel('dificil')" disabled>Comprar Nível Difícil</button>
-    </section>
-    <section id="dificil" style="display: none;">
-        <h2>Nível Difícil</h2>
-        <div id="jogo-dificil"></div>
-        <button onclick="reiniciarDificil()">Reiniciar</button>
-    </section>
+    <h1>Bem-vindo, <?php echo $_SESSION['nome']; ?>!</h1>
+    <p>Moedas: <?php echo $moedas; ?></p>
+    <a href="logout.php">Logout</a>
+    <h2>Jogos Disponíveis</h2>
+    <ul>
+        <?php foreach ($pastasDeJogos as $pasta) { ?>
+            <li><a href="<?php echo $pasta; ?>"><?php echo ucfirst($pasta); ?></a></li>
+        <?php } ?>
+    </ul>
 </body>
 </html>
