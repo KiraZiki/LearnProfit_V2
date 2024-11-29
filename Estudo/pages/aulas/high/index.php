@@ -163,7 +163,7 @@ De qualquer nó, o número de nós negros no caminho até as folhas deve ser o m
     
     <!-- Todas as informações dos Devs presentes aqui(forma de crédito por ajudar a desenvolver o site) MUDAR COM URGENCIA -->
     <footer class="bot">
-        <section class="footerL">Learn Profit</section>
+        <section class="footerL">HydraStacks</section>
         <section class="footerR">
             <div class="bottop">GitHub<i class='bx bxl-github'></i></div>
             <div class="botmid">

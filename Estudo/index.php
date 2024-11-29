@@ -60,15 +60,15 @@
             Sendo eles:</h1>
             <div class="opniveis">
                 <div class="nivel1">
-                    <img src="../assets/Begginer.png" alt="Imagem Nivel Iniciante" style="width: 15em; height: 15em;">
-                    <label>Nivel Begginer: Este nível é perfeito para iniciantes em Estrutura de Dados.</label>
+                    <img src="../assets/Begginer.png" alt="Imagem Nivel Iniciante" style="width: 12em; height: 12em; margin-top: 2.85em;">
+                    <label style="margin-top: -2em;">Nivel Begginer: Este nível é perfeito para iniciantes em Estrutura de Dados.</label>
                 </div>
                 <div class="nivel2">
-                    <img src="../assets/Median.png" alt="Imagem Nivel Intermediário" style="width: 15em; height: 15em;">
+                    <img src="../assets/Median.png" alt="Imagem Nivel Intermediário" style="width: 12em; height: 12em;">
                     <label>Nivel Median: Este nível é perfeito para os programadores mais familiarizados com Estrutura de Dados.</label>
                 </div>
                 <div class="nivel3">
-                    <img src="../assets/HydraIcon.png" alt="Imagem Nivel Avançado" style="width: 15em; height: 15em;">
+                    <img src="../assets/HydraIcon.png" alt="Imagem Nivel Avançado" style="width: 12em; height: 12em;">
                     <label>Nivel High: Este nível é para você "DEV" experiente na programação em Estrutura de Dados.</label>
                 </div>
             </div>
@@ -77,7 +77,7 @@
     
     <!-- Todas as informações dos Devs presentes aqui(forma de crédito por ajudar a desenvolver o site) MUDAR COM URGENCIA -->
     <footer class="bot">
-        <section class="footerL">Learn Profit</section>
+        <section class="footerL">HydraStacks</section>
         <section class="footerR">
             <div class="bottop">GitHub<i class='bx bxl-github'></i></div>
             <div class="botmid">
